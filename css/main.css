@@ -1,6 +1,6 @@
 body {
 	/* Google font loaded in HTML to prevent FOUC in Firefox */
-	font-family: "Ubuntu Sans Mono", "Consolas", monospace;
+	font-family: "Fira Code", "Consolas", monospace;
 }
 .card {
 	display: block;
@@ -21,31 +21,36 @@ body {
 	margin-bottom: 2em;
 }
 .contacts {
-	font-size: 0.9em
+	font-size: 1.5em;
+}
+.contacts svg {
+	height: 1em;
+	margin-right: .5em;
 }
 
 /* Default(Light) theme */
 body {
 	color: black;
-	background-color: floralwhite;
+	background-color: lch(94% 5 90);
 }
 .card {
 	background-color: white;
 }
 a {
-	color: brown;
+	color: lch(50% 5 90);
+	text-decoration: none;
 }
 
 /* Dark theme based on OS */
 @media (prefers-color-scheme: dark) {
 	body {
 		color: white;
-		background-color: #222;
+		background-color: lch(10% 0 0);
 	}
 	.card {
-		background-color: #333;
+		background-color: lch(20% 0 0);
 	}
 	a {
-		color: bisque;
+		color: lch(80% 10 90);
 	}
 }
